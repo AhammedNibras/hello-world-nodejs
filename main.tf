@@ -22,6 +22,7 @@ connection {
 provisioner "file" {
     source      = "index.js"  # Replace with the path to your local file
     destination = "/home/ubuntu/index.js"
+}
 
 provisioner "remote-exec" {
     inline = [
