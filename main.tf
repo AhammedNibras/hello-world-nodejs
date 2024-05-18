@@ -9,8 +9,8 @@ resource "aws_instance" "examples" {
   user_data = <<-EOF
               #!/bin/bash
               curl -sL https://deb.nodesource.com/setup_14.x | bash -
-              apt-get install -y nodejs
-              apt-get install -y git
+              sudo apt-get install -y nodejs
+              sudo apt-get install -y git
               git clone https://github.com/AhammedNibras/hello-world-nodejs.git
               cd hello-world-nodejs
               npm install
