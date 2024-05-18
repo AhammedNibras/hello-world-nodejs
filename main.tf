@@ -26,12 +26,12 @@ provisioner "file" {
 provisioner "remote-exec" {
     inline = [
               "echo 'Hello from the remote instance'",
-              sudo apt-get install -y nodejs,
-              sudo apt-get install -y git,
+              "sudo apt-get install -y nodejs",
+              "sudo apt-get install -y git",
               #git clone https://github.com/AhammedNibras/hello-world-nodejs.git
-              cd hello-world-nodejs,
-              npm install,
-              npm start
+              "cd hello-world-nodejs",
+              "npm install",
+              "npm start"
 
 
   tags = {
