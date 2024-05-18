@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "example" {
+resource "aws_instance" "examples" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
 
@@ -23,5 +23,5 @@ resource "aws_instance" "example" {
 }
 
 output "instance_public_ip" {
-  value = aws_instance.example.public_ip
+  value = aws_instance.examples.public_ip
 }
