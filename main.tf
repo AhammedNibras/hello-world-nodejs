@@ -23,5 +23,5 @@ resource "aws_instance" "example" {
 }
 
 output "instance_public_ip" {
-  value = aws_instance.app_instance.public_ip
+  value = aws_instance.example.public_ip
 }
