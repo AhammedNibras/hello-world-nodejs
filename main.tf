@@ -34,7 +34,7 @@ provisioner "remote-exec" {
               "npm start",
 
 
-  tags = {
+  tags = ,{
     Name = "HelloWorldAppInstance"
   }
 }
