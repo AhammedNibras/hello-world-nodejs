@@ -14,7 +14,7 @@ resource "aws_instance" "example" {
               git clone https://github.com/AhammedNibras/hello-world-nodejs.git
               cd hello-world-nodejs
               npm install
-              npm start &
+              npm start
               EOF
 
   tags = {
