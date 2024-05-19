@@ -105,7 +105,11 @@ resource "aws_instance" "example" {
               "sudo apt install git -y",
               "cd /home/ubuntu",
               "npm install",
-              "npm start",
+              "npm start &",
             ]
   }
+}
+
+output "instance_public_ip" {
+  value = aws_instance.example.public_ip
 }
