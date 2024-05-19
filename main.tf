@@ -105,7 +105,7 @@ resource "aws_instance" "example" {
               "sudo apt install git -y",
               "cd /home/ubuntu",
               "npm install",
-              "nohup npm start &",
+              "npm start &",
             ]
   }
 }
