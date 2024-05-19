@@ -8,7 +8,7 @@ variable "cidr" {
 
 resource "aws_key_pair" "example" {
   key_name   = "terraform-demo"  
-  public_key = file("~/.ssh/id_rsa.pub") 
+  public_key = file("id_rsa.pub") 
 }
 
 resource "aws_vpc" "myvpc" {
