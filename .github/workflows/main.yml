@@ -34,6 +34,9 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "${SSH_PUBLIC_KEY}" > id_rsa.pub
+        echo "${SSH_PRIVATE_KEY}" > id_rsa
+        chmod 600 id_rsa
         terraform apply -auto-approve
